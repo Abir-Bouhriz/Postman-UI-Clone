@@ -4,11 +4,11 @@
             <v-icon class="mr-2 ml-n2">add_box</v-icon>
             <span class="mr-n2">New</span>
         </v-btn>
-        <v-btn elevation="2" color="grey darken-3" class="text-capitalize mr-3 subheading font-weight-bold " >Import</v-btn>
-        <v-btn elevation="2" color="grey darken-3" class="text-capitalize mr-3 subheading font-weight-bold " >Runner</v-btn>
-        <v-btn elevation="2" color="grey darken-3" class="text-capitalize mr-3 subheading font-weight-bold " >
-            <v-icon class="mr-1 ml-n2">post_add</v-icon>
-            <v-icon class="mr-n2">arrow_drop_down</v-icon>
+        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >Import</v-btn>
+        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >Runner</v-btn>
+        <v-btn elevation="1" color="grey darken-3" class="grey--texttext-capitalize mr-3 subheading font-weight-bold " >
+            <v-icon class="mr-1 ml-n2" color="grey">post_add</v-icon>
+            <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
         </v-btn>
 
         <v-spacer></v-spacer>
@@ -18,7 +18,7 @@
             <span class="mr-2">My Work Space</span>
             <v-icon>arrow_drop_down</v-icon>
         </v-btn>
-        <v-btn elevation="2" color="grey darken-3" class="text-capitalize mr-5 subheading font-weight-bold " >
+        <v-btn elevation="1" color="grey darken-3" class="text-capitalize mr-5 subheading font-weight-bold " >
             <v-icon class="mr-2 ml-n2">person_add_alt_1</v-icon>
             <span class="mr-n2">Invite</span>
         </v-btn>
@@ -42,8 +42,8 @@
         <v-btn fab small class="mr-2 teal lighten-2" >
             <v-icon > account_tree </v-icon>
         </v-btn>
-        <v-btn elevation="2" color="grey darken-3" class="text-capitalize  subheading font-weight-bold " >
-            <span class="mr-1 ">Upgrade</span>
+        <v-btn elevation="1" color="grey darken-3" class="text-capitalize  subheading font-weight-bold " >
+            <span class="mr-1 grey--text ">Upgrade</span>
             <v-icon class="mr-n2">arrow_drop_down</v-icon>
         </v-btn>
       
