@@ -10,10 +10,36 @@
         <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >
             Runner
         </v-btn>
-        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >
-            <v-icon class="mr-1 ml-n2" color="grey">post_add</v-icon>
-            <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
+        <v-menu offset-y>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold "
+          v-bind="attrs"
+          v-on="on">
+          <v-icon class="mr-1 ml-n2" color="grey">post_add</v-icon>
+        <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
         </v-btn>
+      </template>
+      <v-list height="160">
+          <v-list-item-title class="ml-4 body-2 grey--text">OPEN NEW</v-list-item-title>
+          <v-row>
+              <v-col>
+        <v-list-item dense
+          v-for="(item, index) in items"
+          :key="index">
+          <v-list-item-title class="body-2 mt-n2">{{ item.title }}</v-list-item-title>
+        </v-list-item>
+        </v-col>
+        <v-col>
+            <v-list-item dense
+          v-for="(link, i) in links"
+          :key="i">
+          <v-list-item-title class="body-2 mt-n2 grey--text">{{ link.title }}</v-list-item-title>
+        </v-list-item>
+        </v-col>
+        </v-row>
+      </v-list>
+    </v-menu>
 
         <v-spacer></v-spacer>
 
@@ -80,6 +106,17 @@
 
 <script>
 export default {
-    
+     data: () => ({
+      items: [
+        { title: 'Tab' },
+        { title: 'Postman Window' },
+        { title: 'Runner Window' },
+      ],
+      links: [
+        { title: 'Ctrl+T' },
+        { title: 'Ctrl+Shift+N' },
+        { title: 'Ctrl+Shift+R' },
+      ],
+    }),
 }
 </script>
