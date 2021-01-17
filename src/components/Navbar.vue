@@ -1,12 +1,16 @@
 <template>
- <v-app-bar app flat height="60">
+    <v-app-bar app flat height="60">
         <v-btn dense elevation="2" color="orange darken-3" class="text-capitalize mr-3 subheading font-weight-bold " >
             <v-icon class="mr-2 ml-n2">add_box</v-icon>
             <span class="mr-n2">New</span>
         </v-btn>
-        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >Import</v-btn>
-        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >Runner</v-btn>
-        <v-btn elevation="1" color="grey darken-3" class="grey--texttext-capitalize mr-3 subheading font-weight-bold " >
+        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >
+            Import
+        </v-btn>
+        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >
+            Runner
+        </v-btn>
+        <v-btn elevation="1" color="grey darken-3" class="grey--text text-capitalize mr-3 subheading font-weight-bold " >
             <v-icon class="mr-1 ml-n2" color="grey">post_add</v-icon>
             <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
         </v-btn>
@@ -24,31 +28,54 @@
         </v-btn>
     
       <v-spacer></v-spacer>
-        <v-btn fab small class="mr-2 orange darken-3" >
-            <v-icon > autorenew </v-icon>
-        </v-btn>
-        <v-btn fab small class="mr-2" >
-            <v-icon > wifi_tethering </v-icon>
-        </v-btn>
-        <v-btn fab small class="mr-2" >
-            <v-icon > settings </v-icon>
-        </v-btn>
-        <v-btn fab small class="mr-2" >
-            <v-icon > notifications</v-icon>
-        </v-btn>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn fab small v-bind="attrs" v-on="on" class="mr-2 orange darken-3" >
+                    <v-icon > autorenew </v-icon>
+                </v-btn>
+            </template>
+            <span>Sync your API requests across devices</span>
+        </v-tooltip>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn fab small v-bind="attrs" v-on="on" class="mr-2" >
+                    <v-icon > wifi_tethering </v-icon>
+                </v-btn>
+            </template>
+            <span>Capture requests ans cookies with Postman</span>
+        </v-tooltip>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn fab small v-bind="attrs" v-on="on" class="mr-2" >
+                    <v-icon > settings </v-icon>
+                </v-btn>
+            </template>
+            <span>Settings</span>
+        </v-tooltip>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn fab small class="mr-2" v-bind="attrs" v-on="on" >
+                    <v-icon > notifications</v-icon>
+                </v-btn>
+            </template>
+            <span>Notifications</span>
+        </v-tooltip>
         <v-btn fab small class="mr-2" >
             <v-icon > favorite </v-icon>
         </v-btn>
-        <v-btn fab small class="mr-2 teal lighten-2" >
-            <v-icon > account_tree </v-icon>
-        </v-btn>
+        <v-tooltip bottom>
+            <template v-slot:activator="{ on, attrs }">
+                <v-btn fab small v-bind="attrs" v-on="on" class="mr-2 teal lighten-2" >
+                    <v-icon > account_tree </v-icon>
+                </v-btn>
+            </template>
+            <span>Manage accounts</span>
+        </v-tooltip>
         <v-btn elevation="1" color="grey darken-3" class="text-capitalize  subheading font-weight-bold " >
             <span class="mr-1 grey--text ">Upgrade</span>
             <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
         </v-btn>
-      
-          
-  </v-app-bar>
+    </v-app-bar>
 </template>
 
 <script>
