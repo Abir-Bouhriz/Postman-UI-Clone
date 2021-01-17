@@ -28,7 +28,6 @@
               v-model="ex11"
               label="Save Responses"
               color="orange darken-3"
-              value="orange darken-3"
               hide-details>
             </v-switch>
             <v-divider></v-divider>
@@ -68,9 +67,82 @@
               <v-icon>visibility</v-icon>
             </v-btn>
             <v-btn  elevation="1" color="grey darken-3">
-              <v-icon>settings_input_composite</v-icon>
+              <v-icon>tune</v-icon>
             </v-btn>
           </v-app-bar>
+          <div class="mt-10 ml-5">
+            <h1 class="mb-4">Good evening!</h1>
+            <p class="font-weight-light">Use Launchpad to start something new, pick up where you left off, or explore some resources to help you master Postman.</p>
+          </div>
+          <v-row>
+            <v-col cols="12" lg="6">
+              <h3 class="ml-5 mt-10 mb-1">Start something new</h3>
+              <v-list style="background:transparent;">
+
+                <v-list-item>
+              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mr-2">subtitles</v-icon>
+                <span class="ml-2 font-weight-light">Create a request</span>
+              </v-btn>
+              </v-list-item>
+
+              <v-list-item>
+              <v-btn class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mr-2">text_snippet</v-icon>
+                <span class="ml-2 font-weight-light">Create a collection</span>
+                <v-icon>arrow_drop_down</v-icon>
+              </v-btn>
+              </v-list-item>
+
+              <v-list-item>
+              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mr-2">snippet_folder</v-icon>
+                <span class="ml-2 font-weight-light">Create an environment</span>
+              </v-btn>
+              </v-list-item>
+
+              <v-list-item>
+              <v-btn text disabled class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mr-2">scatter_plot</v-icon>
+                <span class="ml-2 font-weight-light">Create an API</span>
+              </v-btn>
+              </v-list-item>
+
+              <v-list-item>
+              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mr-2">more_horiz</v-icon>
+                <span class="ml-2 font-weight-light">View More</span>
+              </v-btn>
+              </v-list-item>
+              </v-list>
+
+              <h3 class="ml-5 mt-10 ">Recent workspaces</h3>
+              <p class="ml-10 mt-8 font-weight-light">Find your most recently used workspaces here</p>
+
+              <h3 class="ml-5 mt-10">Customize</h3>
+              <v-switch
+                class="ml-5 mb-3"
+                v-model="ex11"
+                label="Dark mode"
+                color="orange darken-3"
+                hide-details>
+            </v-switch>
+            <v-switch
+                class="ml-5 mb-3"
+                v-model="ex11"
+                label="Enable Launchpad"
+                color="orange darken-3"
+                hide-details>
+            </v-switch>
+            <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                <v-icon class="mx-2">more_horiz</v-icon>
+                <span class="ml-3 font-weight-light">More settings</span>
+              </v-btn>
+            </v-col>
+            <v-col cols="12" lg="6">
+
+            </v-col>
+          </v-row>
         </v-col>
       </v-row>
     </v-app>
