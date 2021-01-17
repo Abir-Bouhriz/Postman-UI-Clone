@@ -140,7 +140,43 @@
               </v-btn>
             </v-col>
             <v-col cols="12" lg="6">
+              <v-card outlined class="mt-6 mr-10 pa-3">
+                <h3 class="ml-5 mt-5 ">Work smarter with Postman</h3>
+                <p class="ml-5 mt-5 font-weight-light">Learn how Postman can help you at every stage of the API development lifecycle with these in-app tutorials.</p>
 
+                <div class="ml-5" >
+                  <v-btn class="py-7">
+                    <v-icon color="#EF6C00">apartment</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">Designing and mocking APIs</span>
+                    <span class="custom-transform-class text-none font-weight-light grey--text" style="margin-left:185px">2 lessons</span>
+                  </v-btn>
+                  <v-btn class="py-7">
+                    <v-icon color="#00E676">pest_control</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">Debugging and manual testing</span>
+                    <span class="custom-transform-class text-none font-weight-light grey--text" style="margin-left:171px">4 lessons</span>
+                  </v-btn>
+                  <v-btn class="py-7">
+                    <v-icon color="#039BE5">integration_instructions</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">Automated testing</span>
+                    <span class="custom-transform-class text-none font-weight-light grey--text" style="margin-left:260px">4 lessons</span>
+                  </v-btn>
+                  <v-btn class="py-7"> 
+                    <v-icon color="#FFFF00">table_view</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">API documentation</span>
+                    <span class="custom-transform-class text-none font-weight-light grey--text" style="margin-left:257px">1 lessons</span>
+                  </v-btn>
+                  <v-btn class="py-7">
+                    <v-icon color="#D50000">timeline</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">Monotoring</span>
+                    <span class="custom-transform-class text-none font-weight-light grey--text" style="margin-left:312px">1 lessons</span>
+                  </v-btn>
+                  <v-btn class="py-7">
+                    <v-icon color="#2E7D32">api</v-icon>
+                    <span class="ml-4 custom-transform-class text-none font-weight-light">Collaboration</span>
+                    <span class=" custom-transform-class text-none font-weight-light grey--text" style="margin-left:300px">2 lessons</span>
+                  </v-btn>
+                </div>
+              </v-card>
             </v-col>
           </v-row>
         </v-col>
@@ -150,11 +186,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
-
 export default {
-  name: 'Home',
- 
 }
 </script>
