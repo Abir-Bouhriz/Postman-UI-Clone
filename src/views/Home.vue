@@ -42,9 +42,31 @@
             </div>
           </div>
         </v-col>
-
+        
         <v-col cols="12" lg="9">
+          <v-app-bar class="mx-n3" style="border-bottom:1px solid grey;">
+            <v-tabs>
+              <v-tab>Item One</v-tab>
+              <v-tab>Item Two</v-tab>
+              <v-tab>Item Three</v-tab>
+            </v-tabs>
 
+            <v-spacer></v-spacer>
+            <v-divider vertical></v-divider>
+            <v-autocomplete class="ml-3"
+              label="No Environment"
+              clearable
+              hide-details
+              hide-selected
+              solo dense>
+            </v-autocomplete>
+            <v-btn class="ml-3 mr-3"  elevation="1" color="grey darken-3">
+              <v-icon>visibility</v-icon>
+            </v-btn>
+            <v-btn  elevation="1" color="grey darken-3">
+              <v-icon>settings_input_composite</v-icon>
+            </v-btn>
+          </v-app-bar>
         </v-col>
       </v-row>
     </v-app>
