@@ -6,6 +6,9 @@
 ## Description:
 This is Postman UI clone, made with [Vuetify](https://vuetifyjs.com/en/introduction/why-vuetify/), beside an authentication with both dark and light theme.
 
+## What is Postman ?
+Postman is a collaboration platform for API development. Postman's features simplify each step of building an API and streamline collaboration so you can create better APIs—faster.
+
 ## ScreenShots:
 <img src="screenshots/postmanClone.jpg" />
 <img src="screenshots/signIn.jpg" />
