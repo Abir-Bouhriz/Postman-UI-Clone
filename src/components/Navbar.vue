@@ -97,7 +97,8 @@
             </template>
             <span>Manage accounts</span>
         </v-tooltip>
-        <v-btn elevation="1" color="grey darken-3" class="text-capitalize  subheading font-weight-bold " >
+        <v-btn elevation="1" color="grey darken-3" class="text-capitalize subheading font-weight-bold " >
+            <router-link to="/signup"></router-link>
             <span class="mr-1 grey--text ">Upgrade</span>
             <v-icon class="mr-n2" color="grey">arrow_drop_down</v-icon>
         </v-btn>

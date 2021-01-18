@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <v-app>
+     <v-app>
       <v-row>
         <v-col cols="12" lg="3" >
-          <div class="px-3" style="background:#121212; border-right:1px solid grey; height: 2050px;">
+          <div class="px-3" style="border-right:1px solid grey; height: 2050px;">
             <v-text-field 
               outlined rounded hide-details dense 
               label="Filter" 
@@ -44,7 +44,6 @@
         
         <v-col cols="12" lg="9">
           <v-app-bar class="mx-n3" style="border-bottom:1px solid grey;">
-            
               <v-btn elevation="1" color="grey darken-3">
                 <span class="text-capitalize">Launchpad</span>
                 <v-icon class="pl-16">close</v-icon>
@@ -57,6 +56,7 @@
               </v-btn>
 
             <v-spacer></v-spacer>
+
             <v-divider vertical></v-divider>
             <v-autocomplete class="ml-3"
               label="No Environment"
@@ -70,50 +70,51 @@
               <v-icon>tune</v-icon>
             </v-btn>
           </v-app-bar>
+
           <div class="mt-10 ml-5">
             <h1 class="mb-4">Good evening!</h1>
             <p class="font-weight-light">Use Launchpad to start something new, pick up where you left off, or explore some resources to help you master Postman.</p>
           </div>
+
           <v-row>
             <v-col cols="12" lg="6">
               <h3 class="ml-5 mt-10 mb-1">Start something new</h3>
               <v-list style="background:transparent;">
+                <v-list-item>
+                  <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                    <v-icon class="mr-2">subtitles</v-icon>
+                    <span class="ml-2 font-weight-light">Create a request</span>
+                  </v-btn>
+                </v-list-item>
 
                 <v-list-item>
-              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
-                <v-icon class="mr-2">subtitles</v-icon>
-                <span class="ml-2 font-weight-light">Create a request</span>
-              </v-btn>
-              </v-list-item>
+                  <v-btn class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                    <v-icon class="mr-2">text_snippet</v-icon>
+                    <span class="ml-2 font-weight-light">Create a collection</span>
+                    <v-icon>arrow_drop_down</v-icon>
+                  </v-btn>
+                </v-list-item>
 
-              <v-list-item>
-              <v-btn class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
-                <v-icon class="mr-2">text_snippet</v-icon>
-                <span class="ml-2 font-weight-light">Create a collection</span>
-                <v-icon>arrow_drop_down</v-icon>
-              </v-btn>
-              </v-list-item>
+                <v-list-item>
+                  <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                    <v-icon class="mr-2">snippet_folder</v-icon>
+                    <span class="ml-2 font-weight-light">Create an environment</span>
+                  </v-btn>
+                </v-list-item>
 
-              <v-list-item>
-              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
-                <v-icon class="mr-2">snippet_folder</v-icon>
-                <span class="ml-2 font-weight-light">Create an environment</span>
-              </v-btn>
-              </v-list-item>
+                <v-list-item>
+                  <v-btn text disabled class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                    <v-icon class="mr-2">scatter_plot</v-icon>
+                    <span class="ml-2 font-weight-light">Create an API</span>
+                  </v-btn>
+                </v-list-item>
 
-              <v-list-item>
-              <v-btn text disabled class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
-                <v-icon class="mr-2">scatter_plot</v-icon>
-                <span class="ml-2 font-weight-light">Create an API</span>
-              </v-btn>
-              </v-list-item>
-
-              <v-list-item>
-              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
-                <v-icon class="mr-2">more_horiz</v-icon>
-                <span class="ml-2 font-weight-light">View More</span>
-              </v-btn>
-              </v-list-item>
+                <v-list-item>
+                  <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+                    <v-icon class="mr-2">more_horiz</v-icon>
+                    <span class="ml-2 font-weight-light">View More</span>
+                  </v-btn>
+                </v-list-item>
               </v-list>
 
               <h3 class="ml-5 mt-10 ">Recent workspaces</h3>
@@ -126,19 +127,20 @@
                 label="Dark mode"
                 color="orange darken-3"
                 hide-details>
-            </v-switch>
-            <v-switch
+              </v-switch>
+              <v-switch
                 class="ml-5 mb-3"
                 v-model="ex11"
                 label="Enable Launchpad"
                 color="orange darken-3"
                 hide-details>
-            </v-switch>
-            <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
+              </v-switch>
+              <v-btn  class="custom-transform-class text-none mr-5 subheading font-weight-bold " >
                 <v-icon class="mx-2">more_horiz</v-icon>
                 <span class="ml-3 font-weight-light">More settings</span>
               </v-btn>
             </v-col>
+
             <v-col cols="12" lg="6">
               <v-card outlined class="mt-6 mr-10 pa-3">
                 <h3 class="ml-5 mt-5 ">Work smarter with Postman</h3>
@@ -177,6 +179,7 @@
                   </v-btn>
                 </div>
               </v-card>
+
               <v-card outlined class="mt-5 mr-10 pa-3">
                 <h3 class="ml-5 mt-5 ">What's new with Postman</h3>
                 <h4 class="mt-5 ml-7">It's Rocket Fuel for Your API Skills<span class="ml-3 orange--text text--darken-3 px-1" style="border:1px solid #EF6C00">New</span></h4>
@@ -192,12 +195,14 @@
                 <v-btn class="ml-4 orange--text text--darken-3 custom-transform-class text-none"> Join the hack</v-btn>
                 <v-divider class="mx-5 mt-2"></v-divider>
               </v-card>
+
               <v-card outlined class="mt-5 mr-10 pa-3">
                 <h3 class="ml-5 mt-5 ">Join a team from your org</h3>
                 <p class="ml-5 mt-4 font-weight-light">You're not a part of a team. Create a new one to start collaborating.
                 </p>
                 <v-btn class="ml-2 orange--text text--darken-3 custom-transform-class text-none"> Invite people to collaborate with you</v-btn>
               </v-card>
+              
               <v-card outlined class="my-5 mr-10 pa-3">
                 <h3 class="ml-5 mt-5 ">Discover</h3>
                 <p class="ml-5 mt-4 font-weight-light">Explore some templates and public APIs you might find useful.

@@ -16,7 +16,7 @@
                     <h2>Sign In</h2>
                   </v-col>
                   <v-col>
-                    <p text class="text-right orange--text text--darken-3 mt-2">Create Account <span class="black--text">instead ?</span></p>
+                    <p text class="text-right orange--text text--darken-3 mt-2">Create Account <span class="white--text">instead ?</span></p>
                   </v-col>
                 </v-row>
                 <p class="mt-2">Email or Username</p>
