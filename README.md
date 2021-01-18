@@ -21,6 +21,7 @@ Postman is a collaboration platform for API development. Postman's features simp
 * CSS
 * JavaScript
 * Visual Studio Code ( Text editor )
+* Paint.net (Image editor)
 
 
 ## Project setup
