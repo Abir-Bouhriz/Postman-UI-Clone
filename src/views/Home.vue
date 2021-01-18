@@ -3,7 +3,7 @@
     <v-app>
       <v-row>
         <v-col cols="12" lg="3" >
-          <div class="px-3" style="background:#121212; border-right:1px solid grey; height: 1200px;">
+          <div class="px-3" style="background:#121212; border-right:1px solid grey; height: 2100px;">
             <v-text-field 
               outlined rounded hide-details dense 
               label="Filter" 
@@ -49,10 +49,10 @@
                 <span class="text-capitalize">Launchpad</span>
                 <v-icon class="pl-16">close</v-icon>
               </v-btn>
-              <v-btn outlined class="ml-2">
+              <v-btn outlined class="ml-2" color="grey">
                 <v-icon>add</v-icon>
               </v-btn>
-              <v-btn outlined class="ml-2">
+              <v-btn outlined class="ml-2" color="grey">
                 <v-icon>more_horiz</v-icon>
               </v-btn>
 
