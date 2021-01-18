@@ -3,7 +3,7 @@
     <v-app>
       <v-row>
         <v-col cols="12" lg="3" >
-          <div class="px-3" style="background:#121212; border-right:1px solid grey; height: 2100px;">
+          <div class="px-3" style="background:#121212; border-right:1px solid grey; height: 2050px;">
             <v-text-field 
               outlined rounded hide-details dense 
               label="Filter" 
@@ -212,17 +212,16 @@
               <v-divider></v-divider>
                 </div>
                  <h4 class="ml-5 mt-5 ">Intro to writing tests - with examples</h4>
-                <p class="ml-5 mt-4 grey--text font-weight-light">This collection contains examples of tests that you can use to automate your
+                <p class="ml-5 mt-2 grey--text font-weight-light">This collection contains examples of tests that you can use to automate your
                    testing process. Includes basic test syntax, examples of API tests, and integration tests.
                 </p>
                 <v-divider></v-divider>
                 <h4 class="ml-5 mt-5 ">COVID19 API</h4>
-                <p class="ml-5 mt-4 grey--text font-weight-light">Corona Virus stats REST API documentation
+                <p class="ml-5 mt-2 grey--text font-weight-light">Corona Virus stats REST API documentation
                 </p>
                 <v-divider></v-divider>
-                <h4 class="ml-5 mt-5 ">Working with GraphQL
-</h4>
-                <p class="ml-5 mt-4 grey--text font-weight-light">CExamples of working with GraphQL endpoints such as using a JSON request body, content-type, and importing queries.
+                <h4 class="ml-5 mt-5 ">Working with GraphQL </h4>
+                <p class="ml-5 mt-2 grey--text font-weight-light">CExamples of working with GraphQL endpoints such as using a JSON request body, content-type, and importing queries.
                 </p>
                 <v-divider></v-divider>
                 <div class="text-center">
