@@ -48,6 +48,8 @@
 
 <script>
 export default {
-    
-}
+	data: () => ({
+		ex4: true,
+	}),
+};
 </script>

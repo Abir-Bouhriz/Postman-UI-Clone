@@ -243,5 +243,8 @@
 
 <script>
 export default {
-}
+	data: () => ({
+		ex11: false,
+	}),
+};
 </script>
