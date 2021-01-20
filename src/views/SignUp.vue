@@ -89,5 +89,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+		ex4: true,
+	}),
+};
 </script>
